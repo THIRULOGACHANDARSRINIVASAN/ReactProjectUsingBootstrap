@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import NavBar from './Components/NavBar'
+import Banner from './Components/Banner'
+import Menu from './Components/Menu'
+import PickOfTheWeek from './Components/PickOfTheWeek'
+import Comments from './Components/Comments'
+import Cart from './Components/Cart'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <NavBar/>
+      <Banner/>
+      <Menu/>
+      <PickOfTheWeek/>
+      <Comments/>
+      <div className="text-center my-3 text-primary small">Copyright 2022-2023</div>
+      
+    </>
+  )
 }
 
-export default App;
+export default App
